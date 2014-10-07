@@ -7,9 +7,37 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+
+struct Player {
+    
+    int lives;
+};
+
+typedef struct Player Player;
+
+int randNum();
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+
+    // Initialize Player A
+    Player playerA;
+    playerA.lives = 3;
+    
+    // Initialize Player B
+    Player playerB;
+    playerB.lives = 3;
+    
+    int r = randNum();
+    
+    printf("%d\n", r);
+    
     return 0;
+}
+
+int randNum() {
+    
+    int r = (int)(arc4random()% 21);
+    
+    return r;
 }
