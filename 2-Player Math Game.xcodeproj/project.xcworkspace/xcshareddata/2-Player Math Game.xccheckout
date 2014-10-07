@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>34AAA540-8AA4-4EBA-A63C-FEEA00D1FA60</string>
+	<key>IDESourceControlProjectName</key>
+	<string>2-Player Math Game</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>13FDCD7D4CFC4868B8A43D83F37CEBC433E6E4AA</key>
+		<string>https://github.com/JacobCho/LHL-2-Player-Math-Game.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>2-Player Math Game.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>13FDCD7D4CFC4868B8A43D83F37CEBC433E6E4AA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JacobCho/LHL-2-Player-Math-Game.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>13FDCD7D4CFC4868B8A43D83F37CEBC433E6E4AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>13FDCD7D4CFC4868B8A43D83F37CEBC433E6E4AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>2-Player%20Math%20Game</string>
+		</dict>
+	</array>
+</dict>
+</plist>
