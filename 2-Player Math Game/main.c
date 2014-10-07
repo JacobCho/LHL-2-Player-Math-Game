@@ -36,12 +36,28 @@ int main(int argc, const char * argv[]) {
     // Initialize Player A
     Player playerA;
     playerA.lives = 3;
+    playerA.score = 0;
     playerA.name = "Player 1";
     
     // Initialize Player B
     Player playerB;
     playerB.lives = 3;
+    playerA.score = 0;
     playerB.name = "Player 2";
+    
+    char name[10];
+    char name2[10];
+    
+    // Ask for player names
+    printf("Player 1: Please enter your name\n");
+    fgets(name, 10, stdin);
+    playerA.name = name;
+    printf("Your name is now %s\n", playerA.name);
+    
+    printf("Player 2: Please enter your name\n");
+    fgets(name2, 10, stdin);
+    playerB.name = name2;
+    printf("Your name is now %s\n", playerB.name);
     
     while (hasLives(playerA, playerB)) {
         
@@ -50,6 +66,7 @@ int main(int argc, const char * argv[]) {
         int operator = randNum(4);
         char answer[10];
         int answerNum;
+        
    
         // Player 1 takes a turn
         playerTurn(playerA, num1, operator, num2);
@@ -57,11 +74,11 @@ int main(int argc, const char * argv[]) {
         answerNum = atoi(answer);
         if (checkAnswer(num1, operator, num2, answerNum)) {
             playerA.score++;
-            printf("Correct! Player 1 score is now: %d\n",playerA.score);
+            printf("Correct! %s score is now: %d\n",playerA.name, playerA.score);
         }
         else {
             playerA.lives--;
-            printf("Wrong! Player 1 lives is now: %d\n",playerA.lives);
+            printf("Wrong! %s lives is now: %d\n",playerA.name, playerA.lives);
         }
         
         // Player 2 takes a turn
@@ -73,11 +90,11 @@ int main(int argc, const char * argv[]) {
         answerNum = atoi(answer);
         if (checkAnswer(num1, operator, num2, answerNum)) {
             playerB.score++;
-            printf("Correct! Player 2 score is now: %d\n",playerA.score);
+            printf("Correct! %s score is now: %d\n",playerB.name, playerB.score);
         }
         else {
             playerB.lives--;
-            printf("Wrong! Player 2 lives is now: %d\n",playerA.lives);
+            printf("Wrong! %s lives is now: %d\n",playerB.name, playerB.lives);
         }
 
     }
