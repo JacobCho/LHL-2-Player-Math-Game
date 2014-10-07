@@ -39,17 +39,34 @@ int main(int argc, const char * argv[]) {
         char answer[10];
         int answerNum;
         
+        // Player 1 takes a turn
         printf("Player 1: What does %d plus %d equal?\n", num1, num2);
         fgets(answer,10,stdin);
         answerNum = atoi(answer);
         if (checkAnswer(num1, num2, answerNum)) {
             playerA.score++;
-            printf("Correct! Your score is now: %d\n",playerA.score);
+            printf("Correct! Player 1 score is now: %d\n",playerA.score);
         }
         else {
             playerA.lives--;
-            printf("Wrong! Your lives is now: %d\n",playerA.lives);
+            printf("Wrong! Player 1 lives is now: %d\n",playerA.lives);
         }
+        
+        // Player 2 takes a turn
+        num1 = randNum();
+        num2 = randNum();
+        printf("Player 2: What does %d plus %d equal?\n", num1, num2);
+        fgets(answer,10,stdin);
+        answerNum = atoi(answer);
+        if (checkAnswer(num1, num2, answerNum)) {
+            playerB.score++;
+            printf("Correct! Player 2 score is now: %d\n",playerA.score);
+        }
+        else {
+            playerB.lives--;
+            printf("Wrong! Player 2 lives is now: %d\n",playerA.lives);
+        }
+
         
     }
     
